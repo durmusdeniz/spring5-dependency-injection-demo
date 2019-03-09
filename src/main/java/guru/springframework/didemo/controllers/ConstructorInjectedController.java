@@ -6,9 +6,9 @@ import guru.springframework.didemo.services.GreetingServiceImpl;
 public class ConstructorInjectedController {
 
 
-    private GreetingServiceImpl greetingService;
+    private GreetingService greetingService;
 
-    public ConstructorInjectedController(GreetingServiceImpl greetingService){
+    public ConstructorInjectedController(GreetingService greetingService){
         this.greetingService = greetingService;
     }
 
