@@ -2,7 +2,9 @@ package guru.springframework.didemo.controllers;
 
 import guru.springframework.didemo.services.GreetingService;
 import guru.springframework.didemo.services.GreetingServiceImpl;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
 
 
@@ -12,7 +14,7 @@ public class ConstructorInjectedController {
         this.greetingService = greetingService;
     }
 
-    String sayHello(){
+    public String sayHello(){
         return greetingService.sayGreeting();
     }
 
